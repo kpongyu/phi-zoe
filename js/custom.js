@@ -28,22 +28,11 @@ const tl1 = gsap.timeline();
 
 tl1
   .fromTo("#hero-zoe", { x: 100, duration: 1, opacity: 0 }, { x: 0, duration: 1, opacity: 1 })
-  .fromTo("#wife", { y: -100, duration: 1, opacity: 0 }, { y: '10%', duration: 1, opacity: 1 }, "<")
   .fromTo("#section1-intro", { duration: 1, opacity: 0 }, { duration: 1, opacity: 1 })
   .fromTo("#section1-p", { y: 100, duration: 1, opacity: 0 }, { y: 0, duration: 1, opacity: 1 });
 
 
-gsap.to("#section2-content",
-  {
-    scrollTrigger: {
-      trigger: "#section2-content",
-      scrub: true,
-      // start: "top center",
-      // markers: true,
-      toggleActions: "restart pause reverse pause"
 
-    }, y: 100, duration: 2
-  })
 
 //change navigation colors
 ScrollTrigger.create({
@@ -78,17 +67,7 @@ ScrollTrigger.matchMedia({
     })
 
 
-    gsap.to(".section4",
-      {
-        scrollTrigger: {
-          trigger: ".section4",
-          start: "start start",
-          end: "bottom bottom",
-          pinSpacing: false,
-          pin: true
-
-        }
-      });
+   
   },
 
 }); 
