@@ -1,0 +1,1199 @@
+/*font unified*/
+$mobile: 768px;
+$tablet: 991px;
+$smallScreen: 1200px;
+$hugeScreen: 2000px;
+
+
+/*colors*/
+$dark-purple: #170d67;
+$light-purple: #6e06c1;
+$green: #00e4a5;
+$text: #231f20;
+$black: #000;
+$white: #fff;
+$blue: #3a5cff;
+$dark-grey: #737373;
+$light-grey: #f7f7f7;
+
+
+
+
+
+
+html {
+    /* 10px */
+    font-size: 62.5%;
+}
+
+body {
+    /* 16px */
+    font-size: 1.6rem;
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+a{
+    color: $dark-purple;
+}
+
+
+/*titles*/
+h1{
+    font-size: 6rem;
+    color: $blue;
+    font-weight: bold;
+
+    @media screen and (max-width: $mobile) {
+        font-size: 4rem;
+        padding-top: 7rem !important;
+        
+    }
+}
+
+
+
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: $mobile) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+main>.container {
+    padding: 60px 15px 0;
+}
+
+
+/*header*/
+.logo{
+    max-width: 15rem;
+}
+
+
+/*section1*/
+.section1{
+    height: 100vh;
+    background-image: url("../img/section1-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    position: relative;
+    overflow: hidden;
+    min-height: 90rem;
+
+    .bar{
+        height: 5px;
+        background-color: $green;
+        width: 0;
+    }
+    p{
+        font-size: 3rem;
+        color: $text;
+    }
+    em{
+        font-style: normal;
+        color: $light-purple;
+        font-weight: bold;
+    }
+    
+}
+
+#section1-p{
+    padding-top: 2rem;
+        h2{
+            font-size: 3.2rem;
+            color: $blue;
+            font-weight: bold;
+        }
+        p{
+            font-size: 1.6rem;
+        }
+    }
+
+#section1-intro{
+    font-size: 1.6rem;
+}
+
+
+.section1-images{
+    position: relative;
+    height: 80vh;
+}
+
+// #section2{
+//     background-image: url("../img/section2-bg.png");
+// }
+
+
+@media screen and (max-width: $tablet) {
+    .section1 {
+        height: auto;
+    }
+
+    .section1-images {
+        height: 50vh;
+    }
+}
+
+.section1-titles{
+    z-index: 1;
+}
+
+
+
+#hero-zoe{
+    position: absolute;
+    width: 70rem;
+    min-width: 200px;
+    height: auto;
+    top: -4rem;
+    right: 0;
+    padding: 0;
+
+     @media screen and (max-width: 991px) {
+        right: -20rem;
+        top: 7rem;
+    }
+}
+
+#wife {
+    position: absolute;
+    width: 30rem;
+    min-width: 200px;
+    height: auto;
+    bottom: 10%;
+    right: 0;
+}
+
+@media (max-width: $tablet) {
+
+
+#wife {
+    width: 30rem;
+    bottom: 20%;
+   
+}
+
+}
+
+@media (max-width: $mobile) {
+
+
+    #wife {
+        width: 20rem;
+        bottom: 20%;
+
+    }
+
+}
+
+
+
+@media screen and (min-width: $hugeScreen){
+
+        
+        #wife {
+            width: 35rem;
+        }
+}
+
+
+
+
+
+
+
+.section2 {
+    height: 100vh;
+    background-image: url("../img/hpwes.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    position: relative;
+    margin-top: -5px;
+    overflow: hidden;
+    min-height: 80rem;
+
+    @media screen and (max-width: $tablet) {
+        background-image: url("../img/section2-mobile.jpg");
+        background-position: center;
+        height: 60rem;
+        min-height:auto !important;
+    }
+
+    h2{
+        font-size: 3rem;
+        color: $dark-purple;
+
+        @media screen and (max-width: $mobile) {
+            font-size: 2.5rem;
+        }
+    }
+    em {
+        font-style: normal;
+        color: $light-purple;
+        font-weight: bold;
+    }
+}
+
+#zoe{
+    position: absolute;
+    width: 50rem;
+    min-width: 200px;
+    height: auto;
+    bottom: 5rem;
+    right: 0;
+}
+
+@media screen and (min-width: $mobile) and (max-width: $tablet) {
+    #zoe {
+        width: 100vw;
+        bottom: 0;
+    }
+}
+
+.section2.lighting-bg{
+    background-image: url("../img/lighting.jpg");
+
+    @media screen and (max-width: $tablet) {
+        background-image: url("../img/section2-mobile-lighting.jpg");
+        background-position: center;
+        height: 60rem;
+      
+    }
+}
+
+
+
+
+
+
+.section3 {
+    height: 80vh;
+    background-color: #cbcbcb;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: -5px;
+
+    @media screen and (max-width: $tablet) {
+        height: auto;
+        min-height: 80vh;
+    }
+
+    h2{
+        font-size: 4rem;
+        color: $light-purple;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 3rem;
+        }
+
+        @media screen and (max-width: $mobile) {
+            font-size: 2.5rem;
+        }
+    em{
+        font-size: 5rem;
+        line-height: 1;
+        font-style: normal;
+        color: $blue;
+        font-weight: bold;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 4.5rem;
+        }
+
+        @media screen and (max-width: $tablet) {
+            font-size: 4.5rem;
+        }
+
+        @media screen and (max-width: $mobile) {
+            font-size: 3rem;
+        }
+    }
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    // .section3 {
+    //     height: auto;
+    // }
+    // .section3-content{
+    //     height: 30rem;
+    //     z-index: 1;
+    // }
+    #zoe{
+        width: 50rem;
+        left: 0;
+        right: 0;
+        bottom: -12rem;
+    }
+}
+
+
+.section3-images {
+    position: relative;
+    height: 100vh;
+
+    @media screen and (max-width: $tablet) {
+        position: relative;
+        height: 40rem;
+    }
+}
+
+
+
+
+
+
+
+
+.section4{
+    background-color: #fff;
+    z-index: 1;
+    overflow: hidden;
+
+       h2{
+        font-size: 4rem;
+        color: $light-purple;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 3rem;
+        }
+
+        @media screen and (max-width: $mobile) {
+            font-size: 2.5rem;
+        }
+
+            h3{
+        font-size: 26px;
+        color: $light-purple;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    p{
+        margin-bottom: 2rem;
+    }
+
+
+    em{
+        font-size: 5rem;
+        line-height: 1;
+        font-style: normal;
+        color: $blue;
+        font-weight: bold;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 4.5rem;
+        }
+
+        @media screen and (max-width: $tablet) {
+            font-size: 4.5rem;
+        }
+
+        @media screen and (max-width: $mobile) {
+            font-size: 3rem;
+        }
+    }
+    }
+
+    h3{
+        font-size: 2.4rem;
+        color: $light-purple;
+        font-weight: lighter;
+    }
+    .card-text{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        font-size: 1.6rem;
+        color: $dark-grey;
+    }
+    .card-body{
+        background-color: $light-grey;
+    }
+}
+
+
+@media screen and (max-width: $mobile) {
+    .section4 {
+        height: auto;
+    }
+}
+
+
+
+.section5 {
+    
+    background-color: #f0f0f0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+   
+
+    .bubble{
+        max-width: 200px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .title{
+            background-color: #3a5cff;
+            padding: 7rem;
+            padding-bottom: 3rem;
+            
+            h2{
+                color: white;
+            }
+        }
+        .bubble-2{
+            flex-direction: row-reverse;
+            background-color: #dcded9;
+        }
+        .bubble{
+            margin-left: -100px;
+            margin-top: -140px;
+        }
+        .bubble-2 .bubble{
+            margin-left: 0px;
+            margin-right: -100px;
+            
+        }
+        .bubble-content{
+            padding-left: 3rem !important;
+            padding-right: 3rem !important;
+        }
+    }
+   
+
+       h2{
+        font-size: 4rem;
+        color: $light-purple;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 3rem;
+        }
+
+      
+    em{
+        font-size: 5rem;
+        line-height: 1;
+        font-style: normal;
+        color: $blue;
+        font-weight: bold;
+
+        @media screen and (max-width: 1200px) {
+            font-size: 4.5rem;
+        }
+
+        @media screen and (max-width: $tablet) {
+            font-size: 4.5rem;
+        }
+
+        @media screen and (max-width: $mobile) {
+            font-size: 3rem;
+        }
+    }
+    }
+
+        h3{
+        font-size: 26px;
+        color: $light-purple;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    button{
+        font-size: 1.6rem;
+        background-color: $blue;
+    }
+}
+
+.section5-images {
+    // position: relative;
+    // height: 45vh;
+}
+.section5-content{
+    z-index: 1;
+    padding-bottom: 10rem !important;
+}
+
+#zoe2 {
+    position: absolute;
+    width: 40rem;
+    min-width: 200px;
+    height: auto;
+    bottom: 5rem;
+
+    @media all and (-ms-high-contrast: none),
+    (-ms-high-contrast: active) {
+        bottom: 0;
+    }
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+    #zoe2 {
+        width: 100vw;
+        bottom: 20vh !important;
+    }
+}
+
+// @media screen and (max-width: $mobile) {
+//     .section5{
+//         height: 35vh;
+//     }
+  
+// }
+
+// @media screen and (min-width: $mobile) and (max-width: $tablet) {
+//     #zoe2 {
+//         width: 100%;
+//         bottom: 20%;
+//     }
+// }
+
+// @media screen and (min-width: $tablet) and (max-width: $smallScreen) {
+//     #zoe2 {
+//         width: 100%;
+//         bottom: 5vh;
+//     }
+// }
+
+
+.quote-text{
+    h3{
+        font-size: 26px;
+        color: $light-purple;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        margin-top: 0rem;
+    }
+    p{
+        margin-bottom: 2rem;
+    }
+  
+    .btn{
+        background-color: $light-purple;
+        border-radius: 50px;
+        font-size: 1.8rem;
+        padding: 1rem 2rem;
+        border: 0
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.video-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.video-container::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.card-1-img{
+    background-image: url("../img/card-left.png");
+    background-size: cover;
+    background-position: center;
+}
+.card-2-img {
+    background-image: url("../img/card-right.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.modal-btn{
+    width: 20rem;
+    font-size: 1.6rem;
+}
+
+.link-btn{
+    width: 15rem;
+    font-size: 1.6rem;
+}
+
+
+footer{
+    z-index: 99;
+    background-color: $dark-purple;
+    color: $white;
+    font-size: 1.2rem;
+}
+
+
+#accordionExample{
+    z-index: 1;
+   
+}
+
+.accordion-button{
+    font-size: 1.6rem;
+    background-color: rgba(255,255,255, 0.8);
+}
+
+.accordion-body{
+    color: $dark-purple;
+}
+
+.card{
+  
+    transition: all .3s ease-out;
+    box-shadow: none;
+
+    &:hover{
+    transform: translate(0, -5px);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+}
+
+.accordion-button{
+    font-size: 1.8rem;
+    color: $dark-purple;
+
+    .green-bar{
+        width: 5px;
+        background-color: $green;
+        height: 35px;
+        display: inline-block;
+        margin-right: 1rem;
+    }
+}
+
+.accordion-button::after {
+    background-image: url("../img/plus.svg");
+    width: 1.5rem;
+    height: 1.5rem;
+    background-size: 1.5rem;
+
+}
+.accordion-button:not(.collapsed)::after{
+    background-image: url("../img/minus.svg");
+}
+
+video{
+    width: 100% !important;
+    height: auto !important;
+}
+.video {
+  opacity: 0;
+}
+
+.video-card{
+   min-height: 22rem;
+
+  
+}
+
+@media (min-width: 576px){
+.modal-dialog {
+    max-width: 80vw;
+}
+}
+
+
+.lighting-thumbnail{
+    background: url("../img/lighting-thumbnail.jpg");
+    background-size: cover;
+}
+.thermostat-thumbnail{
+    background: url("../img/smarttstat-thumbnail.jpg");
+    background-size: cover;
+}
+.qhec-thumbnail{
+    background: url("../img/qhec-thumbnail.jpg");
+    background-size: cover;
+}
+
+
+
+
+.modal-link{
+    text-decoration: none;
+}
+.modal-title{
+        font-size: 2.4rem;
+        color: $light-purple;
+        font-weight: lighter;
+    }
+
+
+
+
+/*
+!!! This demo is being refactored !!!
+
+-- add auto focus on the first item of the navigation when it is shown
+-- replace .menu:not(.menu_activated) .menu__list{  display: none; } to hidden
+-- use :is pseudo-class to simplify selectors 
+
+*/
+/*
+=====
+DEPENDENCES
+=====
+*/
+
+/* The component will reset button browser styles */
+
+.r-button{
+  --uirButtonBackgroundColor: var(--rButtonBackgroundColor, transparent);
+  --uirButtonPadding: var(--rButtonPadding, var(--rButtonPaddingTop, 0) var(--rButtonPaddingRight, 0) var(--rButtonPaddingBottom, 0) var(--rButtonPaddingLeft, 0));
+  --uirButtonBorderWidth: var(--rButtonBorderWidth, 0);
+  --uirButtonBorderStyle: var(--rButtonBorderStyle, solid);
+  --uirButtonBorderColor: var(--rButtonBorderColor, currentColor);
+  --uirButtonFontFamily: var(--rButtonFontFamily, inherit);
+  --uirButtonFontSize: var(--rButtonFontSize,  inherit);
+  --uirButtonColor: var(--rButtonColor);
+
+  background-color: var(--uirButtonBackgroundColor);
+  padding: var(--uirButtonPadding);
+
+  border-width: var(--uirButtonBorderWidth);
+  border-style: var(--uirButtonBorderStyle);
+  border-color: var(--uirButtonBorderColor);
+
+  cursor: pointer;
+
+  font-family: var(--uirButtonFontFamily);
+  font-size: var(--uirButtonFontSize);
+}
+
+.r-button::-moz-focus-inner,
+.r-button[type="button"]::-moz-focus-inner,
+.r-button[type="reset"]::-moz-focus-inner,
+.r-button[type="submit"]::-moz-focus-inner {
+  
+  /* Remove the inner border and padding in Firefox. */
+  
+  border-style: none;
+  padding: 0;
+}
+
+/* The component will reset browser's styles of link */
+
+.r-link{
+    --uirLinkDisplay: var(--rLinkDisplay, inline-flex);
+    --uirLinkTextColor: var(--rLinkTextColor);
+    --uirLinkTextDecoration: var(--rLinkTextDecoration, none);
+
+    display: var(--uirLinkDisplay) !important;
+    color: var(--uirLinkTextColor) !important;
+    text-decoration: var(--uirLinkTextDecoration) !important;
+}
+
+/* The component will reset browser's styles of list */
+
+.r-list{
+    --uirListPaddingLeft: var(--rListPaddingLeft, 0);
+    --uirListMarginTop: var(--rListMarginTop, 0);
+    --uirListMarginBottom: var(--rListMarginBottom, 0);
+    --uirListListStyle: var(--rListListStyle, none);
+
+    padding-left: var(--uirListPaddingLeft) !important;
+    margin-top: var(--uirListMarginTop) !important;
+    margin-bottom: var(--uirListMarginBottom) !important;
+    list-style: var(--uirListListStyle) !important;
+}
+
+/* Basic styles of the hamburger component */
+
+.m-hamburger{  
+  --uiHamburgerThickness: var(--hamburgerThickness, 3px);
+
+  display: var(--hamburgerDisplay, inline-flex);
+  width: var(--hamburgerWidth, 28px);
+  height: var(--hamburgerHeight, 20px);
+
+  position: relative;
+  margin-top: 3em;
+}
+
+.m-hamburger::before, 
+.m-hamburger::after, 
+.m-hamburger__label{
+  width: 100%;
+  height: var(--uiHamburgerThickness);
+  border-radius: var(--hamburgerBorderRadius, 5px);
+  background-color: var(--hamburgerBackgroundColor, currentColor);
+
+  position: absolute;
+  left: 0;
+}
+
+.m-hamburger::before, 
+.m-hamburger::after{
+  content:"";
+}
+
+.m-hamburger::before{
+  top: 0;
+}
+
+.m-hamburger::after{
+  bottom: 0;
+}
+
+.m-hamburger__label{
+  /* The calculation of middle hamburger button line position */
+  
+  top: calc(50% - calc(var(--uiHamburgerThickness) / 2));
+}
+
+/* helper to hide elements that are available only for screen readers. */
+
+.screen-reader{
+  width: var(--screenReaderWidth, 1px) !important;
+  height: var(--screenReaderHeight, 1px) !important;
+  padding: var(--screenReaderPadding, 0) !important;
+  border: var(--screenReaderBorder, none) !important;
+
+  position: var(--screenReaderPosition, absolute) !important;
+  clip: var(--screenReaderClip, rect(1px, 1px, 1px, 1px)) !important;
+  overflow: var(--screenReaderOverflow, hidden) !important;
+}
+
+/*
+=====
+MENU STYLES
+=====
+*/
+
+.menu{
+  --uiMenuCircleSize: var(--menuCircleSize, 6.25rem);
+  --uiMenuCircleOffset: var(--menuCircleOffset, 1rem);
+  --uiMenuCircleHeight: calc(var(--uiMenuCircleSize) / 2);  
+  --uiMenuCircleBackgroundColor: var(--menuCircleBackgroundColor, currentColor);
+
+  --uiMenuHamburgerWidth: var(--menuHamburgerWidth, 1.75rem);
+  --uiMenuHamburgerHeight: var(--menuHamburgerHeight, 1.25rem);
+  
+  --rButtonPaddingTop: calc(var(--uiMenuCircleHeight) - var(--uiMenuHamburgerHeight) - var(--uiMenuCircleOffset));
+  
+  --hamburgerWidth: var(--uiMenuHamburgerWidth);
+  --hamburgerHeight: var(--uiMenuHamburgerHeight);
+  --hamburgerBackgroundColor: white;
+
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: var(--menuZindex, 9998);
+}
+
+.menu__nav{
+  box-sizing: border-box;
+  width: 100%;
+  height: 0;
+
+  transition: opacity .2s ease-out;
+  opacity: 0;
+
+  display: flex;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.menu__list{
+  width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 10%;   
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.menu__footer{
+   width: 100%;
+   height: 20vh;
+   bottom: 0;
+   position: absolute;
+   background-color: #a9aba7;
+    overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+    transition: opacity 0.2s ease-out, visibility 0.2s ease-out 0.2s;
+  opacity: 1;
+  visibility: visible;
+}
+
+.menu__toggle{
+  box-sizing: border-box;
+    width: 6em;
+    height: 6em;
+  flex: none;
+
+  position: relative;
+
+ 
+
+}
+
+.m-hamburger{
+    transition: all 200ms ease-in;
+}
+
+.zoe-bg{
+    background-image: url("../img/menu-zoe.png");
+    width: 6em;
+    display: block;
+    height: 6.5em;
+    border-radius: 50%;
+    background-size:contain;
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    transition: all 200ms ease-in;
+    
+}
+
+
+.menu__toggle:hover{
+    .zoe-bg{
+        bottom: 0.5rem;
+       box-shadow: inset 0 0 5px 1px rgba(0, 0, 0, 0.1);
+    }
+    .m-hamburger{
+            margin-top: 2.3em;
+    }
+}
+
+
+
+
+.menu_activated .menu__toggle::before{
+     background-color: var(--uiMenuCircleBackgroundColor);
+     transition: transform .25s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+              width .25s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+              height .25s cubic-bezier(0.04, -0.1, 0.29, 0.98);
+}
+.menu__toggle::before{
+  /*
+  1. The font-size property is used to simplify calculations of the element's sizes and position
+  2. The negative value for the bottom property need for hiding half of circle. 
+  */
+
+  content: "";
+  width: 1em;
+  height: 1em;
+  font-size: var(--uiMenuCircleSize); /* 1 */
+
+  background-color: var(--uiMenuCircleBackgroundColor);
+  border-radius: 50%;
+
+  position: absolute;
+
+  left: calc(50% - .5em);
+  z-index: -1;
+
+  will-change: width, height;
+  transition: transform .25s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+              width .25s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+              height .25s cubic-bezier(0.04, -0.1, 0.29, 0.98);
+}
+
+
+
+
+
+
+
+/* styles of hamburger's animation */
+
+.m-hamburger::before, 
+.m-hamburger::after, 
+.m-hamburger__label{
+  transition-timing-function: ease;
+  transition-duration: .15s;  
+}
+
+.m-hamburger::before, 
+.m-hamburger::after{
+  transition-property: transform;
+}
+
+.m-hamburger__label{
+  transition-property: transform, opacity;
+}
+
+/*
+=====
+MENU STATES
+=====
+*/
+
+.menu__toggle:focus,
+.menu__link:focus{
+  outline: var(--menuHaburgerOutlineOWidth, 2px) solid blue;
+  outline-offset: var(--menuHaburgerOutlineOffset, 5px);
+}
+.menu__toggle:focus:not(:focus-visible){
+     outline: var(--menuHaburgerOutlineOWidth, 2px) solid blue !important;
+}
+
+.menu_activated{
+  height: 100%;
+  pointer-events: none;
+}
+
+.menu_activated .menu__nav{
+  flex-grow: 1;
+  opacity: 1;
+  overflow: hidden;
+  will-change: opacity;
+  transition-duration: .2s;
+  transition-delay: .3s;
+}
+
+.menu_activated .menu__toggle::before{
+  width: 100vmax;
+  height: 100vmax;
+  transform: translate3d(-50vh, -50vh, 0) scale(5);
+  transition-duration: 1s;
+}
+
+.menu:not(.menu_activated) .menu__list{
+  display: none;
+}
+.menu:not(.menu_activated) .menu__footer{
+  opacity: 0;
+  visibility: hidden;
+}
+
+.menu_activated .m-hamburger::before{
+  top: 50%;
+  transform: translate3d(0, -50%, 0) rotate(45deg);
+}
+
+.menu_activated .m-hamburger::after{
+  transform: translate3d(0, -50%, 0) rotate(135deg);
+  top: 50%;
+}
+
+.menu_activated .m-hamburger__label{
+  transform: rotate(-45deg) translate3d(-.285em,-.3em, 0);
+  opacity: 0;
+}
+
+/*
+=====
+SETTINGS
+=====
+*/
+
+:root{
+  --colorWhite: $text;
+  --colorMain: #ffffff;
+  --menuCircleBackgroundColor: var(--colorMain);
+  --menuHamburgerBackgroundColor: var(--colorWhite);
+  --menuHaburgerOutlineColor: var(--colorMain);
+}
+
+.menu_activated{
+  --menuHaburgerOutlineColor: var(--colorWhite);
+}
+
+/*
+=====
+DEMO
+=====
+*/
+
+
+
+.page{
+  max-width: 380px;
+  padding: 1rem;
+  margin: auto;  
+  text-align: center;
+}
+
+.page__name{
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.page__hint{
+  display: block;
+  line-height: 1.45;
+  margin-top: 1rem;
+}
+
+.menu__group{
+  --rLinkTextColor: var(--colorWhite);
+
+  padding: .5rem 2rem; 
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+
+
+//progress bar
+.progress-container {
+    background-color: rgba(150,150,150,.6);
+    height: 10px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.progress-bar {
+  background-color: #2196f3;
+  height: 10px;
+  width: 0%;
+}
+
+.content {
+  padding: 2em;
+}
+
+.menu__link:focus{
+    text-decoration: underline !important;
+}
