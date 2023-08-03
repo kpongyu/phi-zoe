@@ -89,7 +89,7 @@ main>.container {
     background-size: cover;
     background-repeat: none;
     position: relative;
-    overflow: hidden;
+    // overflow: hidden;
     min-height: 90rem;
 
     .bar{
@@ -160,6 +160,7 @@ main>.container {
     top: -4rem;
     right: 0;
     padding: 0;
+    z-index: 9;
 
      @media screen and (max-width: 991px) {
         right: -20rem;
