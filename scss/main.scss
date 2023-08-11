@@ -89,8 +89,7 @@ main>.container {
     background-size: cover;
     background-repeat: none;
     position: relative;
-    // overflow: hidden;
-    min-height: 90rem;
+    overflow-x: hidden;
 
     .bar{
         height: 5px;
@@ -109,12 +108,27 @@ main>.container {
     
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.section1::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.section1 {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
 #section1-p{
     padding-top: 2rem;
         h2{
             font-size: 3.2rem;
             color: $blue;
             font-weight: bold;
+
+            @media screen and (max-width: 991px) {
+                font-size: 2.2rem;
+            }
         }
         p{
             font-size: 1.6rem;
@@ -136,15 +150,7 @@ main>.container {
 // }
 
 
-@media screen and (max-width: $tablet) {
-    .section1 {
-        height: auto;
-    }
 
-    .section1-images {
-        height: 50vh;
-    }
-}
 
 .section1-titles{
     z-index: 1;
@@ -161,6 +167,7 @@ main>.container {
     right: 0;
     padding: 0;
     z-index: 9;
+    overflow-x: hidden;
 
      @media screen and (max-width: 991px) {
         right: -20rem;
@@ -282,7 +289,7 @@ main>.container {
 
 .section3 {
     height: 80vh;
-    background-color: #cbcbcb;
+    background-color: #d1d1d1;
     background-position: center;
     background-size: cover;
     background-repeat: none;
@@ -944,12 +951,20 @@ MENU STYLES
   position: absolute;
   top: 10%;   
   overflow-y: auto;
+  padding-top: 2rem;
   -webkit-overflow-scrolling: touch;
+
+  @media screen and (min-width: 991px) {
+    width: 80%;
+  }
+   @media screen and (min-width: 1200px) {
+    width: 60%;
+  }
 }
 
 .menu__footer{
    width: 100%;
-   height: 20vh;
+   height: 15vh;
    bottom: 0;
    position: absolute;
    background-color: #a9aba7;
@@ -1067,11 +1082,10 @@ MENU STATES
 
 .menu__toggle:focus,
 .menu__link:focus{
-  outline: var(--menuHaburgerOutlineOWidth, 2px) solid blue;
-  outline-offset: var(--menuHaburgerOutlineOffset, 5px);
+  outline: var(--menuHaburgerOutlineOWidth, 2px) solid $blue;
 }
 .menu__toggle:focus:not(:focus-visible){
-     outline: var(--menuHaburgerOutlineOWidth, 2px) solid blue !important;
+     outline: var(--menuHaburgerOutlineOWidth, 2px) solid $blue !important;
 }
 
 .menu_activated{
@@ -1085,6 +1099,9 @@ MENU STATES
   will-change: opacity;
   transition-duration: .2s;
   transition-delay: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu_activated .menu__toggle::before{
@@ -1137,9 +1154,17 @@ SETTINGS
 
 /*
 =====
-DEMO
+MENU ITEMS
 =====
 */
+
+.menu-icon{
+    width: 6rem;
+
+    @media screen and (max-width: 768px) {
+        width: 4rem;
+    }
+}
 
 
 
@@ -1166,9 +1191,27 @@ DEMO
   --rLinkTextColor: var(--colorWhite);
 
   padding: .5rem 2rem; 
-  font-size: 2rem;
+  font-size: 3rem;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.8rem;
+  }
   font-weight: 700;
   text-transform: uppercase;
+  
+
+  div{
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    transition: all ease-in 200ms;
+  }
+
+  &:hover{
+    div{
+        background-color: #d1d1d1;
+        transform: translateY(-10px);
+    }
+  }
 }
 
 
