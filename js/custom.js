@@ -157,7 +157,7 @@ function scrollToSection(section) {
   return new Promise((resolve) => {
     gsap.to(window, {
       duration: 0, 
-      scrollTo: section, 
+      scrollTo: {y: section, offsetY: 50 }, 
       autoKill: false,
       onComplete: resolve
     });
@@ -198,9 +198,29 @@ async function toggleMenu(event) {
 })();
 
 
+// scroll reduce the size of navigation
+var resizeTimeout;
 
-
-
+// Attach scroll event listener
+window.addEventListener('scroll', function() {
+    var scrollThreshold = 500; // Adjust the threshold as needed
+    var scrollElement = document.querySelector('.fixed-top');
+    var scrollTop = window.scrollY || document.documentElement.scrollTop;
+    
+    if (scrollTop > scrollThreshold) {
+        scrollElement.classList.add('resize-active');
+        document.querySelector('.progress-container').classList.add('adjust-progress');
+         document.querySelector('.progress-bar').classList.add('adjust-progress');
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(function() {
+            scrollElement.classList.remove('resize-active');
+             document.querySelector('.progress-container').classList.remove('adjust-progress');
+                document.querySelector('.progress-bar').classList.remove('adjust-progress');
+        }, 100); // Adjust the delay time as needed (in milliseconds)
+    } else {
+        scrollElement.classList.remove('resize-active');
+    }
+});
 
 
 
@@ -269,6 +289,9 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+
+
+
 const quote_text = document.querySelectorAll(".quote-text");
 
 function setupOpacityAnimation() {
@@ -285,8 +308,8 @@ function setupOpacityAnimation() {
           toggleActions: "restart pause resume reverse",
           start: "top 50%",
         },
-        delay: 0.15 * index, // Delay of 200ms multiplied by the index of each element
-        duration: 1,
+        delay: 0.05 * index, // Delay of 200ms multiplied by the index of each element
+        duration: 0.5,
       }
     );
   });
